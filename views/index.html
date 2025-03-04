@@ -1,1 +1,12 @@
-Hello, World!
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookshelf</title>
+    {{ template "common.html" }}
+  </head>
+  <body>
+    <div hx-trigger="load" hx-get="/navbar/home" hx-swap="outerHTML"></div>
+    <div class="container-fluid" id="main">
+    </div>
+  </body>
+</html>
